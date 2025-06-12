@@ -1,2 +1,2 @@
-# my-memo-frontend
-my-memo-frontend
+# FrontEnd
+- 2025.06.12 / 프로젝트 생성
