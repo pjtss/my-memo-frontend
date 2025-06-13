@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import './css/Join.css';
 import { join } from './api/AuthApiService.jsx';
 
 const Join = () => {
@@ -24,12 +25,12 @@ const Join = () => {
     }
 
     const handleUserInfoChange = (e) => {
-        const {id, value} = e.target;
-        setUserInfo(prev => ({...prev, [id]: value }));
+        const { id, value } = e.target;
+        setUserInfo(prev => ({ ...prev, [id]: value }));
     }
 
     return (
-        <div>
+        <div className='join-container' >
             <div>
                 <h1> 회원가입 페이지 </h1>
             </div>
@@ -49,8 +50,8 @@ const Join = () => {
                             <td> <input type="password" id='passwordCheck' placeholder='비밀번호를 재입력 해주세요' value={userInfo.passwordCheck} onChange={handleUserInfoChange} /> </td>
                         </tr>
                         <tr>
-                            <td>
-                                <button type="submit" onClick={doJoin} > 로그인 </button>
+                            <td colSpan="2" className="button-cell">
+                                <button type="submit">가입하기</button>
                             </td>
                         </tr>
                     </tbody>
