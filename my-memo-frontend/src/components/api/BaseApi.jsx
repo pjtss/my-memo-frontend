@@ -2,9 +2,9 @@
 import axios from 'axios';
 
 // 1. 기본 설정된 Axios 인스턴스 생성
-const API_ROOT = 'http://localhost:8080';  // 필요에 따라 변경
+const BASE_URL = 'http://localhost:8080';  // 필요에 따라 변경
 const api = axios.create({
-  baseURL: API_ROOT,
+  baseURL: BASE_URL,
   withCredentials: true,              // 항상 쿠키 전송
   headers: {
     'Content-Type': 'application/json'
@@ -19,7 +19,7 @@ export const get = (url, params = {}) =>
 export const post = (url, data = {}) =>
   api.post(url, data);
 
-export const update = (url, data = {}) =>
+export const put = (url, data = {}) =>
   api.put(url, data);
 
 export const patch = (url, data = {}) =>
