@@ -36,7 +36,7 @@ const PostList = () => {
                     {posts.map(post => (
                         <li key={post.id}>
                             {/* Link 로 감싸고 to 에 상세 경로 지정 */}
-                            <Link to={`/posts/${post.id}`} className="post-link">
+                            <Link to={`/post-detail/${post.id}`} className="post-link">
                                 <h2>{post.title}</h2>
                                 <p>{post.content}</p>
                             </Link>

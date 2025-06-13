@@ -1,0 +1,79 @@
+/* src/css/Login.css */
+
+/* 전체 컨테이너: 흰 배경, 중앙 정렬 */
+.login-container {
+    background-color: #ffffff;        /* 흰 바탕 */
+    max-width: 400px;
+    margin: 5rem auto;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* 제목: 파란색 포인트 */
+  .login-container h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #007bff;                  /* 포인트 컬러 */
+    font-size: 1.75rem;
+  }
+  
+  /* 폼 요소 전체 레이아웃 */
+  .login-form .form-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  
+  /* 라벨 텍스트 */
+  .login-form label {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  /* 입력 필드 */
+  .login-form input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+  }
+  
+  /* 입력 포커스 시 파란 테두리 */
+  .login-form input:focus {
+    outline: none;
+    border-color: #007bff;           /* 포인트 컬러 */
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
+  }
+  
+  /* 에러 메시지 */
+  .error-message {
+    color: #e55353;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  /* 버튼 */
+  .login-form button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #007bff;       /* 포인트 컬러 */
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+  }
+  
+  /* 버튼 호버/활성화 효과 */
+  .login-form button:hover {
+    background-color: #0056b3;
+  }
+  .login-form button:active {
+    transform: translateY(2px);
+  }
+  
