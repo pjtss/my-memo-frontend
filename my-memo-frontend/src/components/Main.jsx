@@ -1,12 +1,15 @@
+import { Routes, Route, Link } from "react-router-dom"
 
 function Main() {
 
-  return (
+    return (
+        <div>
+            <div>
+                <h1> 메인 페이지 </h1>
+            </div>
+        </div>
 
-    <div>
-      <h1> Hi, This is 337's Memo Application </h1>
-    </div>
-  )
+    )
 }
 
 export default Main
