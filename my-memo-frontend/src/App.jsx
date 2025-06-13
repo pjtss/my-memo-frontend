@@ -36,7 +36,7 @@ function App() {
           <Route path='/create-post' element={<CreatePost />} />
           <Route path='/update-post' element={<UpdatePost />} />
           <Route path='/post-list' element={<PostList />} />
-          <Route path='/post-detail' element={<PostDetail />} />
+          <Route path='/posts/:id' element={<PostDetail />} />
         </Routes>
       </div>
     </div>

@@ -1,0 +1,53 @@
+/* PostList.css */
+
+/* 전체 컨테이너: 흰 배경, 내부 여백 */
+.post-list {
+    background-color: #ffffff;
+    padding: 2rem;
+    max-width: 800px;
+    margin: 2rem auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  /* 제목: 파란색 포인트 */
+  .post-list h1 {
+    color: #007bff;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  /* 게시글 리스트 */
+  .post-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* 개별 아이템: 파란색 테두리와 호버 시 배경 강조 */
+  .post-list li {
+    border: 1px solid #007bff;
+    border-radius: 4px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    transition: background-color 0.2s;
+  }
+  
+  .post-list li:hover {
+    background-color: rgba(0, 123, 255, 0.05);
+  }
+  
+  /* 게시글 제목 */
+  .post-list li h2 {
+    margin: 0 0 0.5rem;
+    color: #0056b3;
+  }
+  
+  /* 게시글 본문 */
+  .post-list li p {
+    margin: 0;
+    color: #333333;
+    line-height: 1.4;
+  }
+  

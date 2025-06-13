@@ -1,6 +1,8 @@
-import {get, post, put, patch, del } from './BaseApi';
+import {get, post, put, patch, del } from './BaseApi.jsx';
 
-export const getPosts = () => get('/posts');
+export const getPosts = () => get('/posts/all-posts-of-user');
+
+export const getPost = (postId) => get(`/posts/${postId}`);
 
 export const createPost = (payload) => post('/posts', payload);
 
